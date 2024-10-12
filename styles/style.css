@@ -121,6 +121,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
 }
 
 .result__video {
@@ -128,6 +129,7 @@ ol {
   height: inherit;
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: center;
 }
 
 .result__video-container {
@@ -183,8 +185,8 @@ ol {
   background: none;
   outline: none;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -294,6 +296,11 @@ ol {
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max: width 200px;
+
 }
 
 .content__video-card-description {
